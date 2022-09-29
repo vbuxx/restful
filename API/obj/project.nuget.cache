@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9rG5a1n9Q8gHFLtXFHXwg9n95W0E+gIXDoMIdy/kdOaL4O99E+aWtr5zRU8EoNXx7dc0iyK99hQu3KanAAfpkA==",
+  "dgSpecHash": "FuIVPKl3iSjrZzrIVvqIn7QUZLdTTUIvBSvwpEhWQCpYFUdNgo7R112veJOLmtv5Fs+oq7t5B9Tbv8x6Uk0jHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\prama\\source\\repos\\API\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\prama\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\prama\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\prama\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\prama\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

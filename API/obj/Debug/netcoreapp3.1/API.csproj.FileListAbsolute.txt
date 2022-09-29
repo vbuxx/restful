@@ -65,3 +65,4 @@ C:\Users\prama\source\repos\API\API\obj\Debug\netcoreapp3.1\API.csproj.CopyCompl
 C:\Users\prama\source\repos\API\API\obj\Debug\netcoreapp3.1\API.dll
 C:\Users\prama\source\repos\API\API\obj\Debug\netcoreapp3.1\API.pdb
 C:\Users\prama\source\repos\API\API\obj\Debug\netcoreapp3.1\API.genruntimeconfig.cache
+C:\Users\prama\source\repos\API\API\bin\Debug\netcoreapp3.1\BCrypt.Net-Core.dll

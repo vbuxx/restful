@@ -28,7 +28,7 @@ namespace API.Repositories.Data
 
             if (data == null)
                 return null;
-            else if (data != null && !login.Password.Equals(data.User.Password))
+            else if (data != null && !ValidatePassword(login.Password, data.User.Password))
                 return null;
 
             return new ResponseLogin
@@ -41,16 +41,57 @@ namespace API.Repositories.Data
             };
         }
 
-        
+
+        public ResponseRegister Register(Register register)
+        {
+            Employee employee = new Employee()
+            {
+                FullName = register.FullName,
+                Email = register.Email
+            };
+            myContext.Employees.Add(employee);
+
+            if (myContext.SaveChanges() > 0)
+            {
+                var emp = myContext.Employees.Where(x => x.Email == register.Email).FirstOrDefault();
+                myContext.Users.Add(new User() { Id = emp.Id, Password = HashPassword(register.Password) });
+
+                if (myContext.SaveChanges() > 0)
+                {
+
+                    myContext.UserRoles.Add(new UserRole() { UserId = emp.Id, RoleId = register.RoleId });
+                    if (myContext.SaveChanges() > 0)
+                    {
+                        return new ResponseRegister
+                        {
+                            Id = emp.Id,
+                            Email = emp.Email,
+                            FullName = emp.FullName,
+                            RoleId = register.RoleId
+
+                        };
+                    }
+                }
+            }
+            return null;
+        }
 
 
 
-            //if (data == null)
-            //    return null;
-            //else if (data != null && !login.Password.Equals(data.User.Password))
-            //    return null;
+        private static string GetRandomSalt()
+        {
+            return BCrypt.Net.BCrypt.GenerateSalt(12);
+        }
 
+        public static string HashPassword(string password)
+        {
+            return BCrypt.Net.BCrypt.HashPassword(password, GetRandomSalt());
+        }
 
+        public static bool ValidatePassword(string password, string correctHash)
+        {
+            return BCrypt.Net.BCrypt.Verify(password, correctHash);
+        }
     }
 }
 

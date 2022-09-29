@@ -14,15 +14,13 @@ namespace Client.Controllers
     public class UserController : Controller
     {
         HttpClient HttpClient;
-        string address;
+        string loginAddress, registerAddress;
 
         public UserController()
         {
-            this.address = "https://localhost:5001/api/User/";
-            HttpClient = new HttpClient
-            {
-                BaseAddress = new Uri(address)
-            };
+            this.loginAddress = "https://localhost:5001/api/user/login";
+            this.registerAddress = "https://localhost:5001/api/user/register";
+            
         }
         public IActionResult Login()
         {
@@ -32,8 +30,12 @@ namespace Client.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(Login login)
         {
+            HttpClient = new HttpClient
+            {
+                BaseAddress = new Uri(loginAddress)
+            };
             StringContent content = new StringContent(JsonConvert.SerializeObject(login), Encoding.UTF8, "application/json");
-            var result = HttpClient.PostAsync(address, content).Result;
+            var result = HttpClient.PostAsync(loginAddress, content).Result;
             if (result.IsSuccessStatusCode)
             {
                 var data = JsonConvert.DeserializeObject<ResponseClient>(await result.Content.ReadAsStringAsync());
@@ -43,23 +45,28 @@ namespace Client.Controllers
             return View();
         }
 
+        public IActionResult Register()
+        {
+            return View();
+        }
 
-        //public IActionResult Register()
-        //{
-        //    return View();
-        //}
+        [HttpPost]
+        public async Task<IActionResult> Register(Register register)
+        {
+            HttpClient = new HttpClient
+            {
+                BaseAddress = new Uri(registerAddress)
+            };
 
-        //[HttpPost]
-        //public async Task<IActionResult> Register(Register register)
-        //{
-        //    StringContent content = new StringContent(JsonConvert.SerializeObject(register), Encoding.UTF8, "application/json");
-        //    var result = HttpClient.PostAsync(address, content).Result;
-        //    if (result.IsSuccessStatusCode)
-        //    {
+            StringContent content = new StringContent(JsonConvert.SerializeObject(register), Encoding.UTF8, "application/json");
+            var result = HttpClient.PostAsync(registerAddress, content).Result;
+            if (result.IsSuccessStatusCode)
+            {
 
-        //        return RedirectToAction("Index", "AdminPanel");
-        //    }
-        //    return View();
-        //}
+                return RedirectToAction("Login", "User");
+            }
+            return View();
+        }
+
     }
 }

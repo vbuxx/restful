@@ -13,22 +13,34 @@ namespace API.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        UserRepository accountRepository;
-        public UserController(UserRepository accountRepository)
+        UserRepository userRepository;
+        public UserController(UserRepository userRepository)
         {
-            this.accountRepository = accountRepository;
+            this.userRepository = userRepository;
         }
 
-        [HttpPost]
+        [HttpPost("login")]
         public IActionResult Login(Login login)
         {
-            var data = accountRepository.Login(login);
+            var data = userRepository.Login(login);
 
             if (data == null)
             {
                 return BadRequest(new { message = "Gagal login! Email atau password salah", StatusCode = 400 });
             }
             return Ok(new { message = "Berhasil login!", StatusCode = 200, data = data });
+        }
+
+        [HttpPost("register")]
+        public IActionResult Register(Register register)
+        {
+            var data = userRepository.Register(register);
+
+            if (data == null)
+            {
+                return BadRequest(new { message = "Gagal Register!", StatusCode = 400 });
+            }
+            return Ok(new { message = "Berhasil registrasi!", StatusCode = 200, data = data });
         }
 
         //[HttpPost]
