@@ -43,16 +43,29 @@ namespace API.Controllers
             return Ok(new { message = "Berhasil registrasi!", StatusCode = 200, data = data });
         }
 
-        //[HttpPost]
-        //public IActionResult Register(Register register)
-        //{
-        //    var data = accountRepository.Register(register);
 
-        //    if (data == null)
-        //    {
-        //        return BadRequest(new { message = "Gagal Register!", StatusCode = 400 });
-        //    }
-        //    return Ok(new { message = "Berhasil registrasi!", StatusCode = 200, data = data });
-        //}
+        [HttpPost("forgotpassword")]
+        public IActionResult ForgotPassword(ForgotPassword forgotPassword)
+        {
+            var data = userRepository.ForgotPassword(forgotPassword);
+
+            if (data == 0)
+            {
+                return BadRequest(new { message = "Lupa Password Gagal!", StatusCode = 400 });
+            }
+            return Ok(new { message = "Lupa Password Berhasil, Password Telah Diganti!", StatusCode = 200});
+        }
+
+        [HttpPost("changepassword")]
+        public IActionResult ChangePassword(ChangePassword changePassword)
+        {
+            var data = userRepository.ChangePassword(changePassword);
+
+            if (data == 0)
+            {
+                return BadRequest(new { message = "Gagal Ganti Password!", StatusCode = 400 });
+            }
+            return Ok(new { message = "Berhasil Ganti Password!", StatusCode = 200 });
+        }
     }
 }

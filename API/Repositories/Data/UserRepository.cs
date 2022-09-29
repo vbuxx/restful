@@ -77,6 +77,57 @@ namespace API.Repositories.Data
         }
 
 
+        public int ForgotPassword(ForgotPassword forgotPassword)
+        {
+            var emp = myContext.Employees.Where(x => x.Email == forgotPassword.Email).FirstOrDefault();
+            if(emp != null)
+            {
+                var user = myContext.Users.Where(x => x.Id == emp.Id).FirstOrDefault();
+
+                if (user != null && forgotPassword.NewPassword == forgotPassword.ConfirmNewPassword)
+                {
+                    user.Password = HashPassword(forgotPassword.NewPassword);
+                    myContext.Users.Update(user);
+                    
+                    if (myContext.SaveChanges() > 0)
+                    {
+                        return 1;
+                    }
+                }
+
+            }
+            return 0;
+
+        }
+
+
+        public int ChangePassword(ChangePassword changePassword)
+        {
+            var emp = myContext.Employees.Where(x => x.Email == changePassword.Email).FirstOrDefault();
+            if (emp != null)
+            {                
+                var user = myContext.Users.Where(x => x.Id == emp.Id).FirstOrDefault();
+
+                var isOldPassword = ValidatePassword(changePassword.OldPassword, user.Password);
+
+                if (user != null && changePassword.NewPassword == changePassword.ConfirmNewPassword && isOldPassword)
+                {
+                    user.Password = HashPassword(changePassword.NewPassword);
+                    myContext.Users.Update(user);
+                    Console.WriteLine("Sukses : " + isOldPassword);
+
+
+                    if (myContext.SaveChanges() > 0)
+                    {
+                        return 1;
+                    }
+                }
+
+            }
+            return 0;
+
+        }
+
 
         private static string GetRandomSalt()
         {

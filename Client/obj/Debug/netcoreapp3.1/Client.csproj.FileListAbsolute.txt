@@ -112,3 +112,6 @@ C:\Users\prama\source\repos\API\Client\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft
 C:\Users\prama\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\User\Login.cshtml.g.cs
 C:\Users\prama\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\AdminPanel\Index.cshtml.g.cs
 C:\Users\prama\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\ErrorPage\Index.cshtml.g.cs
+C:\Users\prama\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\User\Register.cshtml.g.cs
+C:\Users\prama\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\User\ForgotPassword.cshtml.g.cs
+C:\Users\prama\source\repos\API\Client\obj\Debug\netcoreapp3.1\Razor\Views\User\ChangePassword.cshtml.g.cs
