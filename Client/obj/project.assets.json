@@ -6072,11 +6072,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\prama\\source\\repos\\API\\Client\\Client.csproj",
+      "projectUniqueName": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\Client\\Client.csproj",
       "projectName": "Client",
-      "projectPath": "C:\\Users\\prama\\source\\repos\\API\\Client\\Client.csproj",
+      "projectPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\Client\\Client.csproj",
       "packagesPath": "C:\\Users\\prama\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\prama\\source\\repos\\API\\Client\\obj\\",
+      "outputPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\prama\\AppData\\Roaming\\NuGet\\NuGet.Config",

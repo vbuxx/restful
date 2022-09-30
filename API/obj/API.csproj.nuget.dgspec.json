@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\prama\\source\\repos\\API\\API\\API.csproj": {}
+    "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\prama\\source\\repos\\API\\API\\API.csproj": {
+    "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\prama\\source\\repos\\API\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\prama\\source\\repos\\API\\API\\API.csproj",
+        "projectPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\prama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\prama\\source\\repos\\API\\API\\obj\\",
+        "outputPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\prama\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -50,13 +50,17 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.29, )"
+              "version": "[3.1.25, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.29, )"
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

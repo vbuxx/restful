@@ -47,7 +47,9 @@ namespace API.Repositories.Data
             Employee employee = new Employee()
             {
                 FullName = register.FullName,
-                Email = register.Email
+                Email = register.Email,
+                Alamat = register.Alamat,
+                Telp = register.Telp
             };
             myContext.Employees.Add(employee);
 

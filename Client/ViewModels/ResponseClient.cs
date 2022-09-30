@@ -1,5 +1,4 @@
-﻿using Client.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,6 +9,6 @@ namespace Client.ViewModels
     {
         public string Message { get; set; }
         public int StatusCode { get; set; }
-        public ResponseLogin data { get; set; }
+        public ResponseLoginClient data { get; set; }
     }
 }

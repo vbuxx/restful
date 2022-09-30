@@ -67,5 +67,6 @@ namespace API.Controllers
             }
             return Ok(new { message = "Berhasil Ganti Password!", StatusCode = 200 });
         }
+
     }
 }

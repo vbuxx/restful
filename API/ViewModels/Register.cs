@@ -11,5 +11,8 @@ namespace API.ViewModels
         public string Email { get; set; }
         public int RoleId { get; set; }
         public string Password { get; set; }
+        public string Alamat { get; set; }
+
+        public string Telp { get; set; }
     }
 }

@@ -18,7 +18,9 @@ namespace API.Context
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
-        public DbSet<Division> Divisions { get; set; }
+        public DbSet<Barang> Barangs { get; set; }
+        public DbSet<RiwayatPengadaan> RiwayatPengadaans { get; set; }
+        public DbSet<RiwayatPeminjaman> RiwayatPeminjamans { get; set; }
     
 
     }

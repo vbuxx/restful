@@ -14,14 +14,13 @@ namespace Client.Controllers
     public class UserController : Controller
     {
         HttpClient HttpClient;
-        string loginAddress, registerAddress, forgotPasswordAddress, changePasswordAddress;
+        string loginAddress, registerAddress;
 
         public UserController()
         {
             this.loginAddress = "https://localhost:5001/api/user/login";
             this.registerAddress = "https://localhost:5001/api/user/register";
-            this.forgotPasswordAddress = "https://localhost:5001/api/user/forgotpaswword";
-            this.changePasswordAddress = "https://localhost:5001/api/user/changepassword";
+            
             
         }
         public IActionResult Login()
@@ -75,45 +74,6 @@ namespace Client.Controllers
             return View();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> ForgotPassword(ForgotPassword forgotPassword)
-        {
-            HttpClient = new HttpClient
-            {
-                BaseAddress = new Uri(forgotPasswordAddress)
-            };
-
-            StringContent content = new StringContent(JsonConvert.SerializeObject(forgotPassword), Encoding.UTF8, "application/json");
-            var result = HttpClient.PostAsync(forgotPasswordAddress, content).Result;
-            if (result.IsSuccessStatusCode)
-            {
-
-                return RedirectToAction("Login", "User");
-            }
-            return View();
-        }
-
-        public IActionResult ChangePassword()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> ChangePassword(ChangePassword changePassword)
-        {
-            HttpClient = new HttpClient
-            {
-                BaseAddress = new Uri(changePasswordAddress)
-            };
-
-            StringContent content = new StringContent(JsonConvert.SerializeObject(changePassword), Encoding.UTF8, "application/json");
-            var result = HttpClient.PostAsync(changePasswordAddress, content).Result;
-            if (result.IsSuccessStatusCode)
-            {
-
-                return RedirectToAction("Login", "User");
-            }
-            return View();
-        }
+       
     }
 }

@@ -15,6 +15,10 @@ namespace API.Models
         public string FullName { get; set; }
         
         public string Email { get; set; }
+        
+        public string Alamat { get; set; }
+        
+        public string Telp { get; set; }
 
         
     }
