@@ -9,11 +9,13 @@ using API.Context;
 using API.Models;
 using API.Repositories.Data;
 using API.ViewModels;
+using Microsoft.AspNetCore.Cors;
 
 namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowOrigin")]
     public class BarangController : ControllerBase
     {
         BarangRepository barangRepository;

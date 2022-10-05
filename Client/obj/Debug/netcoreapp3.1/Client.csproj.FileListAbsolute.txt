@@ -229,3 +229,4 @@ C:\Users\prama\Desktop\.NET-MCC\DTSExam2\ManajemenAset\NET-WebApp\Client\obj\Deb
 C:\Users\prama\Desktop\.NET-MCC\DTSExam2\ManajemenAset\NET-WebApp\Client\obj\Debug\netcoreapp3.1\Client.Views.pdb
 C:\Users\prama\Desktop\.NET-MCC\DTSExam2\ManajemenAset\NET-WebApp\Client\obj\Debug\netcoreapp3.1\Client.csproj.CopyComplete
 C:\Users\prama\Desktop\.NET-MCC\DTSExam2\ManajemenAset\NET-WebApp\Client\obj\Debug\netcoreapp3.1\Client.genruntimeconfig.cache
+C:\Users\prama\Desktop\.NET-MCC\DTSExam2\ManajemenAset\NET-WebApp\Client\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs

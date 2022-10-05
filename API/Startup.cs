@@ -56,8 +56,13 @@ namespace API
                 });
             });
 
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
+
             #region Dependency Injection
-            
+
             services.AddScoped<UserRepository>();
             services.AddScoped<BarangRepository>();
             #endregion Dependency Injection
@@ -89,6 +94,8 @@ namespace API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors("AllowOrigin");
 
             app.UseEndpoints(endpoints =>
             {
