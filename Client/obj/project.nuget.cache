@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CPk3sxDRENnFM+pPMVFClmCUZ2gWEFVhX+Pp34u9pOzho9+fRnMe1y+a6pqYR35P9MvsKor2Ux0UI6KrAAkJFw==",
+  "dgSpecHash": "95Z2RBRjysxxrCPQGFXezsShsxVrvB7NMAUq8yGOu0tKZ0totMkxJpSLdvfowxkFessJ4KHNSX6GPDjHGcEwUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\Client\\Client.csproj",
+  "projectFilePath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\LastWeek\\NET-WebApp\\client\\Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\prama\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\prama\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

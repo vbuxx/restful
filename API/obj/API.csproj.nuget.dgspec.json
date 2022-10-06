@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\API\\API.csproj": {}
+    "C:\\Users\\prama\\Desktop\\.NET-MCC\\LastWeek\\NET-WebApp\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\API\\API.csproj": {
+    "C:\\Users\\prama\\Desktop\\.NET-MCC\\LastWeek\\NET-WebApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\prama\\Desktop\\.NET-MCC\\LastWeek\\NET-WebApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\API\\API.csproj",
+        "projectPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\LastWeek\\NET-WebApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\prama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\API\\obj\\",
+        "outputPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\LastWeek\\NET-WebApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\prama\\AppData\\Roaming\\NuGet\\NuGet.Config",

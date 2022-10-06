@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\Client\\Client.csproj": {}
+    "C:\\Users\\prama\\Desktop\\.NET-MCC\\LastWeek\\NET-WebApp\\client\\Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\Client\\Client.csproj": {
+    "C:\\Users\\prama\\Desktop\\.NET-MCC\\LastWeek\\NET-WebApp\\client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\Users\\prama\\Desktop\\.NET-MCC\\LastWeek\\NET-WebApp\\client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\Client\\Client.csproj",
+        "projectPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\LastWeek\\NET-WebApp\\client\\Client.csproj",
         "packagesPath": "C:\\Users\\prama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\DTSExam2\\ManajemenAset\\NET-WebApp\\Client\\obj\\",
+        "outputPath": "C:\\Users\\prama\\Desktop\\.NET-MCC\\LastWeek\\NET-WebApp\\client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\prama\\AppData\\Roaming\\NuGet\\NuGet.Config",
